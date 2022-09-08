@@ -1,0 +1,55 @@
+{
+  "Id": "Policy1659469444504",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1659469439453",
+      "Action": [
+        "s3:DeleteBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::${BucketName}/${KeyName}",
+      "Principal": "*"
+    }
+  ]
+} 
+
+{
+  "Id": "Policy1659469444504",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1659469439453",
+      "Action": [
+        "s3:DeleteBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": "arn:aws:s3:::${BucketName}/${KeyName}",
+      "Principal": "*"
+    }
+  ]
+}
+
+{
+  "Type" : "AWS::S3::Bucket",
+  "Properties" : {
+      "AccelerateConfiguration" : AccelerateConfiguration,
+      "AccessControl" : String,
+      "AnalyticsConfigurations" : [ AnalyticsConfiguration, ... ],
+      "BucketEncryption" : BucketEncryption,
+      "BucketName" : String,
+      "CorsConfiguration" : CorsConfiguration,
+      "IntelligentTieringConfigurations" : [ IntelligentTieringConfiguration, ... ],
+      "InventoryConfigurations" : [ InventoryConfiguration, ... ],
+      "LifecycleConfiguration" : LifecycleConfiguration,
+      "LoggingConfiguration" : LoggingConfiguration,
+      "MetricsConfigurations" : [ MetricsConfiguration, ... ],
+      "NotificationConfiguration" : NotificationConfiguration,
+      "ObjectLockConfiguration" : ObjectLockConfiguration,
+      "ObjectLockEnabled" : Boolean,
+      "OwnershipControls" : OwnershipControls,
+      "PublicAccessBlockConfiguration" : PublicAccessBlockConfiguration,
+      "ReplicationConfiguration" : ReplicationConfiguration,
+      "Tags" : [ Tag, ... ],
+
+
