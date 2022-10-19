@@ -2,8 +2,9 @@ ________________________________________________________________________________
 #                          DETAILS
 ________________________________________________________________________________________
 
-Names: Selepe Sello (South Africa)
-Email: sbkskhalo.kq@gmail.com
+##  About Me: 
+    - Tebogo Sello Selepe
+    - Computer Sciences at Tuks
 ________________________________________________________________________________________
 ##              Deploy Static Website on AWS
 
