@@ -1,21 +1,52 @@
-________________________________________________________________________________________
-#                          DETAILS
-________________________________________________________________________________________
+# AWS Website Hosting (CloudFront + S3)
 
-##  About Me: 
-    Tebogo Sello Selepe
-    Computer Sciences at Tuks
-________________________________________________________________________________________
-##              Deploy Static Website on AWS
+A complete solution for hosting static websites on Amazon S3 with automated deployment using CloudFormation and security policies.
 
-In this project, you will deploy a static website to AWS using S3, CloudFront, and IAM.
+![Cloud Hosting](./docs/images/cloud-hosting.png)
 
-#### The files included are: 
+## Project Structure
 
-- index.html - The Index document for the website.
-- /img - The background image file for the website.
-- /vendor - Bootssrap CSS framework, Font, and JavaScript libraries needed for the website to function.
-- /css - CSS files for the website.
-________________________________________________________________________________________
-##                CloudFront URL 
-https://d17itcpyuv7ulx.cloudfront.net/
+```
+.
+├── aws-infrastructure/
+│   ├── cloudformation/
+│   │   └── s3-bucket-template.json   # CloudFormation S3 bucket
+│   ├── policies/
+│   │   ├── s3-bucket-policy.json     # Bucket deletion policy
+│   │   └── s3-object-policy.json     # Object deletion policy
+│   └── scripts/
+│       └── deploy.sh                 # Deployment script
+├── docs/
+│   ├── images/
+│   │   └── cloud-hosting.png         # Documentation images
+│   └── manual.pdf                    # Detailed setup manual
+├── src/                              # Static website files
+│   ├── css/                          # Stylesheets
+│   ├── img/                          # Website images
+│   ├── vendor/                       # Third-party libraries
+│   └── index.html                    # Main website file
+└── README.md
+```
+
+## Prerequisites
+
+- AWS CLI configured with appropriate permissions
+- Bash shell (Linux/macOS/WSL)
+- Active AWS account
+
+## What's Included
+
+- **Static Website**: Responsive blog template with Bootstrap and FontAwesome
+- **CloudFormation Template**: Infrastructure as code for S3 bucket creation
+- **Security Policies**: Bucket and object deletion protection
+- **Deployment Script**: Automated deployment with validation and error handling
+
+## For a Detailed Guide
+
+See the [manual.pdf](docs/manual.pdf) file in the docs directory for comprehensive setup instructions and configuration options.
+
+## License
+
+This project is licensed under the terms described in the [LICENSE](./LICENSE) file.
+
+---
